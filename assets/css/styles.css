@@ -1612,6 +1612,29 @@ p {
   font-weight: 850;
 }
 
+a.contact-icon {
+  text-decoration: none;
+  transition:
+    border-color var(--transition-base),
+    background-color var(--transition-base),
+    transform var(--transition-base);
+}
+
+a.contact-icon:hover {
+  transform: translateY(-2px);
+  border-color: rgba(36, 215, 232, 0.62);
+  background: rgba(36, 215, 232, 0.16);
+}
+
+.heading-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.heading-link:hover {
+  color: var(--color-cyan);
+}
+
 .resume-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.36fr);
