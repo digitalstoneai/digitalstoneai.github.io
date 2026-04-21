@@ -290,37 +290,84 @@
         <div class="container stack-large">
           <div class="section-header reveal">
             <p class="eyebrow">System Design Approach</p>
-            <h2 id="approach-title">Designed before it is automated</h2>
+            <h2 id="approach-title">A disciplined path from messy problem to working system</h2>
             <p>
-              I map the real workflow first: who uses it, where the data comes from,
-              what can fail, what needs human review, and how the finished system
-              should be tested, secured, and maintained.
+              I like building with intention. Before a workflow gets automated,
+              I map how it actually runs, where people get stuck, what the AI should
+              and should not touch, and how the finished system can be tested,
+              secured, maintained, and improved.
             </p>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-step reveal">
+              <span class="number-badge">01</span>
+              <h3>Find the Real Workflow</h3>
+              <p>Start with the operational truth, not the tool stack.</p>
+              <ul class="clean-list">
+                <li>Map users, handoffs, repeated decisions, and current friction</li>
+                <li>Identify where time, money, quality, or attention is being lost</li>
+                <li>Define what a better workflow should prove in measurable terms</li>
+              </ul>
+            </article>
+
+            <article class="process-step reveal">
+              <span class="number-badge">02</span>
+              <h3>Design the System Logic</h3>
+              <p>Plan what the AI does, what people review, and what gets automated.</p>
+              <ul class="clean-list">
+                <li>Separate AI tasks, human approval points, and fallback paths</li>
+                <li>Define inputs, outputs, data flow, permissions, and tool connections</li>
+                <li>Keep the architecture readable so it can be explained and maintained</li>
+              </ul>
+            </article>
+
+            <article class="process-step reveal">
+              <span class="number-badge">03</span>
+              <h3>Build with Controls</h3>
+              <p>Turn the plan into a working system with reliability in mind.</p>
+              <ul class="clean-list">
+                <li>Wire prompts, APIs, forms, dashboards, scoring logic, and automations</li>
+                <li>Add validation, useful error states, and least-privilege access where relevant</li>
+                <li>Structure outputs so they can be reviewed, reused, and improved</li>
+              </ul>
+            </article>
+
+            <article class="process-step reveal">
+              <span class="number-badge">04</span>
+              <h3>Test, Secure, and Refine</h3>
+              <p>Prove the system against realistic situations before trusting it.</p>
+              <ul class="clean-list">
+                <li>Test happy paths, edge cases, bad inputs, and handoff points</li>
+                <li>Review privacy, secrets, unsafe assumptions, and basic OWASP risks</li>
+                <li>Document behavior, limits, decisions, and next improvements</li>
+              </ul>
+            </article>
           </div>
 
           <div class="principle-grid">
             <article class="content-panel reveal">
-              <span class="panel-label">01</span>
-              <h3>Understand the workflow</h3>
+              <span class="panel-label">Focus</span>
+              <h3>Structured before clever</h3>
               <p>
-                Find the repeated decisions, handoffs, pain points, and success metrics
-                before choosing the tools.
+                I prefer clear responsibilities, named steps, and readable outputs
+                over fragile automation that only works in a demo.
               </p>
             </article>
             <article class="content-panel reveal">
-              <span class="panel-label">02</span>
-              <h3>Build with controls</h3>
+              <span class="panel-label">Security</span>
+              <h3>Protect the workflow</h3>
               <p>
-                Define AI responsibilities, human review, fallback behavior, data access,
-                and security boundaries early.
+                I think through data exposure, permissions, secrets, unsafe inputs,
+                and failure modes early, especially when AI touches client data or external tools.
               </p>
             </article>
             <article class="content-panel reveal">
-              <span class="panel-label">03</span>
-              <h3>Measure and refine</h3>
+              <span class="panel-label">Proof</span>
+              <h3>Measure what matters</h3>
               <p>
-                Test the system against realistic inputs, visible outputs, and metrics
-                that prove whether it is useful.
+                Whether the metric is accuracy, response time, lead capture, review
+                time, or report consistency, the build needs proof that it improved something real.
               </p>
             </article>
           </div>
