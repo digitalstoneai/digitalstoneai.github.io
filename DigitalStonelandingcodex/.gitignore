@@ -1,0 +1,22 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local dependency/build folders if tooling is added later
+node_modules/
+dist/
+build/
+.cache/
+
+# Source-only planning/material files not needed for GitHub Pages deploy
+_source/
+
+# Root copies of image assets; deployed copies live in assets/images/
+/BIagent.png
+/Inspectagent.png
+/IntakeAI.png
+/RAGeval.png
+/logo1.png
+/linedkinlogo.jpg
+/instalogo.avif

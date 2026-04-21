@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="InspectAgent case study for AI-assisted infrastructure inspection, drone and ROV image review, defect classification, and standardized reporting.">
+    <title>InspectAgent Case Study | DigitalStoneAI Studio</title>
+    <link rel="canonical" href="https://digitalstoneai.com/case-studies/inspect-agent/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="InspectAgent Case Study | DigitalStoneAI Studio">
+    <meta property="og:description" content="AI-assisted infrastructure inspection, drone and ROV image review, defect classification, and standardized reporting.">
+    <meta property="og:url" content="https://digitalstoneai.com/case-studies/inspect-agent/">
+    <meta property="og:site_name" content="DigitalStoneAI Studio">
+    <meta property="og:image" content="https://digitalstoneai.com/assets/images/Inspectagent.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="../../assets/images/logo1.png">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script src="../../assets/js/main.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "InspectAgent Case Study",
+        "url": "https://digitalstoneai.com/case-studies/inspect-agent/",
+        "description": "Case study for AI-assisted infrastructure inspection, drone and ROV image review, defect classification, and standardized reporting.",
+        "image": "https://digitalstoneai.com/assets/images/Inspectagent.png",
+        "author": {
+          "@type": "Person",
+          "name": "Jayms Henson"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "DigitalStoneAI Studio",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://digitalstoneai.com/assets/images/logo1.png"
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-site-header>
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="../../index.html" aria-label="DigitalStoneAI Studio home">
+          <img class="brand-mark" src="../../assets/images/logo1.png" alt="" width="52" height="42">
+          <span class="brand-text"><span class="brand-name">DigitalStoneAI</span><span class="brand-subtitle">Systems Studio</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
+          <span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="sr-only">Toggle navigation</span>
+        </button>
+        <div class="nav-links" id="primary-menu" data-nav-menu>
+          <a class="nav-link" href="../../index.html">Home</a>
+          <a class="nav-link active" href="../../projects/index.html" aria-current="page">Projects</a>
+          <a class="nav-link" href="../../services/index.html">Services</a>
+          <a class="nav-link" href="../../links/index.html">Links</a>
+          <a class="nav-link" href="../../contact/index.html">Contact</a>
+          <a class="social-link" href="https://www.linkedin.com/in/jayms-henson" target="_blank" rel="noopener noreferrer" aria-label="Jayms Henson on LinkedIn">
+            <img class="social-icon" src="../../assets/images/linedkinlogo.jpg" alt="">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/digitalstone.ai/" target="_blank" rel="noopener noreferrer" aria-label="DigitalStoneAI on Instagram">
+            <img class="social-icon" src="../../assets/images/instalogo.avif" alt="">
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section">
+        <div class="container case-hero-grid">
+          <div class="section-header reveal">
+            <p class="eyebrow">Infrastructure Inspection</p>
+            <h1>InspectAgent</h1>
+            <p>
+              Computer vision and AI reporting system for drone and ROV inspection
+              workflows, defect classification, severity scoring, and standardized reports.
+            </p>
+            <div class="meta-row">
+              <span class="tag">Infrastructure</span>
+              <span class="tag">Drone / ROV</span>
+              <span class="tag">OpenAI Vision API</span>
+              <span class="tag">PDF Reports</span>
+            </div>
+            <div class="button-row">
+              <a class="button button-secondary" href="../../projects/index.html">Back to Projects</a>
+              <a class="button button-ghost" href="../../contact/index.html">Contact</a>
+            </div>
+            <div class="case-hero-kpis" aria-label="InspectAgent headline metrics">
+              <div><strong>1.4h</strong><span>review time per structure</span></div>
+              <div><strong>91%</strong><span>exact AI severity match</span></div>
+              <div><strong>100%</strong><span>critical defects caught</span></div>
+              <div><strong>82</strong><span>test frames classified</span></div>
+            </div>
+          </div>
+
+          <aside class="feature-panel case-summary reveal" aria-label="Project summary">
+            <h2>Project Summary</h2>
+            <dl class="case-meta">
+              <div><dt>Client</dt><dd>Pacific Infrastructure Services, San Diego, CA. Regional inspection firm handling bridge, pier, and marine structure inspections.</dd></div>
+              <div><dt>Challenge</dt><dd>Manual drone and ROV footage review took 6-8 hours per structure and reports varied across inspectors.</dd></div>
+              <div><dt>System Type</dt><dd>Vision classification, defect mapping, severity scoring, inspector review, and structured report generation.</dd></div>
+              <div><dt>Contract Context</dt><dd>Workflows relevant to CalTrans, Port of San Diego, and defense-adjacent inspection environments.</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-panel">
+        <div class="container case-shell">
+          <div class="case-main">
+            <article class="content-panel reveal">
+              <span class="panel-label">Challenge</span>
+              <h2>Inspection footage was slow to review and hard to standardize</h2>
+              <p>
+                The client needed a system that could accelerate review without removing expert
+                oversight. Reports had to be consistent, searchable, and audit-friendly across
+                inspectors and structure types.
+              </p>
+              <ul class="insight-list">
+                <li><strong>Manual review load:</strong> 6-8 hours per structure before automation.</li>
+                <li><strong>Quality issue:</strong> reports varied depending on who reviewed the footage.</li>
+                <li><strong>Audit need:</strong> defect decisions needed confidence, severity, and override history.</li>
+              </ul>
+            </article>
+
+            <article class="content-panel reveal">
+              <span class="panel-label">System &amp; Stack</span>
+              <h2>From footage upload to final PDF delivery</h2>
+              <div class="flow-list">
+                <span>Footage upload</span>
+                <span>Frame extraction</span>
+                <span>Vision classification</span>
+                <span>Defect DB entry</span>
+                <span>Severity scoring</span>
+                <span>Priority ranking</span>
+                <span>Inspector review</span>
+                <span>Final PDF</span>
+              </div>
+              <div class="stack-tags" aria-label="InspectAgent stack">
+                <span>Python</span><span>OpenAI Vision API</span><span>GPT-4V</span><span>LangChain report agent</span><span>ffmpeg</span><span>PostgreSQL</span><span>n8n</span><span>PDF generation</span><span>Google Cloud Storage</span>
+              </div>
+            </article>
+
+            <figure class="visual-panel reveal">
+              <img class="case-visual" src="../../assets/images/Inspectagent.png" alt="InspectAgent visual showing footage ingestion, defect classification, severity scoring, and report generation">
+              <figcaption class="visual-caption">InspectAgent visual summary showing how inspection footage becomes classified defects and structured reports.</figcaption>
+            </figure>
+
+            <article class="content-panel reveal">
+              <span class="panel-label">Frame Processing</span>
+              <h2>Different extraction rates for normal and flagged zones</h2>
+              <ul class="detail-list">
+                <li><strong>Standard review:</strong> ffmpeg extracted 1 frame per second.</li>
+                <li><strong>Flagged zones:</strong> extraction increased to 4 frames per second.</li>
+                <li><strong>Database record:</strong> frame ID, location coordinates, defect type, severity, confidence score, and inspector override.</li>
+                <li><strong>Human review:</strong> inspector confirms or overrides AI flags, and all decisions are logged.</li>
+              </ul>
+            </article>
+
+            <article class="data-panel reveal">
+              <div class="table-heading">
+                <div>
+                  <span class="panel-label">Defect Classification Data</span>
+                  <h2>Bridge inspection review set</h2>
+                </div>
+                <p>AI severity was compared with human verification for exact or close match.</p>
+              </div>
+              <div class="table-wrap">
+                <table class="case-table">
+                  <thead>
+                    <tr><th>Frame ID</th><th>Location</th><th>Defect type</th><th>AI severity</th><th>Human verified</th><th>Match</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>F-0041</td><td>East span, beam 3</td><td>Transverse cracking</td><td>Moderate (3)</td><td>Moderate (3)</td><td class="score-good">Yes</td></tr>
+                    <tr><td>F-0078</td><td>Pier 2 base</td><td>Spalling</td><td>Severe (4)</td><td>Severe (4)</td><td class="score-good">Yes</td></tr>
+                    <tr><td>F-0112</td><td>Deck surface</td><td>Surface wear</td><td>Minor (2)</td><td>Minor (1)</td><td class="score-warn">Close</td></tr>
+                    <tr><td>F-0156</td><td>West abutment</td><td>Water intrusion staining</td><td>Moderate (3)</td><td>Moderate (3)</td><td class="score-good">Yes</td></tr>
+                    <tr><td>F-0203</td><td>Pier 1 cap</td><td>Rebar exposure</td><td>Critical (5)</td><td>Critical (5)</td><td class="score-good">Yes</td></tr>
+                    <tr><td>F-0241</td><td>Soffit panel</td><td>Minor efflorescence</td><td>Minor (1)</td><td>None (0)</td><td class="score-warn">Over-flagged</td></tr>
+                    <tr><td>F-0289</td><td>East bearing</td><td>Corrosion</td><td>Severe (4)</td><td>Severe (4)</td><td class="score-good">Yes</td></tr>
+                    <tr><td>F-0334</td><td>Expansion joint</td><td>Debris accumulation</td><td>Minor (2)</td><td>Minor (2)</td><td class="score-good">Yes</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="content-panel reveal">
+              <span class="panel-label">Defect Taxonomy</span>
+              <h2>14 defect types supported by the inspection model</h2>
+              <div class="stack-tags" aria-label="Defect taxonomy">
+                <span>Cracking</span><span>Spalling</span><span>Corrosion</span><span>Rebar exposure</span><span>Water intrusion</span><span>Efflorescence</span><span>Joint failure</span><span>Bearing wear</span><span>Scour</span><span>Delamination</span><span>Impact damage</span><span>Paint failure</span><span>Debris</span><span>Biological growth</span>
+              </div>
+            </article>
+
+            <article class="content-panel reveal">
+              <span class="panel-label">Classification Results</span>
+              <h2>Accuracy, tolerance, and critical defect coverage</h2>
+              <div class="metric-grid">
+                <div class="metric-card"><span>Exact severity match</span><strong>91%</strong><p>75 of 82 frames</p></div>
+                <div class="metric-card"><span>Off-by-one severity</span><strong>7%</strong><p>Acceptable tolerance</p></div>
+                <div class="metric-card"><span>False positive rate</span><strong>1.2%</strong><p>Over-flagged frames</p></div>
+                <div class="metric-card"><span>Missed defect rate</span><strong>0.8%</strong><p>All minor severity</p></div>
+              </div>
+              <ul class="detail-list">
+                <li><strong>Critical defect detection:</strong> 100% detection rate with zero misses.</li>
+                <li><strong>Inspector override rate:</strong> 9%, with overrides retained for learning and audit review.</li>
+              </ul>
+            </article>
+
+            <article class="content-panel reveal">
+              <span class="panel-label">Structure Results</span>
+              <h2>Inspection reporting became faster and more consistent</h2>
+              <div class="metric-grid">
+                <div class="metric-card"><span>Avg review time</span><strong>1.4h</strong><p>Down from 6-8 hours</p></div>
+                <div class="metric-card"><span>Report consistency</span><strong>100%</strong><p>Standardized format</p></div>
+                <div class="metric-card"><span>Immediate action</span><strong>3 of 12</strong><p>Structures flagged</p></div>
+                <div class="metric-card"><span>Critical misses</span><strong>0</strong><p>Across the test set</p></div>
+              </div>
+              <p>
+                Immediate-action flags included rebar exposure, severe corrosion, and other
+                high-severity conditions that required priority review.
+              </p>
+            </article>
+
+            <article class="content-panel reveal">
+              <span class="panel-label">Government &amp; Defense Relevance</span>
+              <h2>The architecture transfers to inspection-heavy public infrastructure workflows</h2>
+              <ul class="detail-list">
+                <li>NIWC Pacific facility inspection workflows.</li>
+                <li>Port infrastructure assessment for Navy and Coast Guard environments.</li>
+                <li>ROV-based subsea inspection for pipeline, pier, and hull workflows.</li>
+                <li>Bridge inventory programs under FHWA requirements.</li>
+              </ul>
+            </article>
+
+            <blockquote class="case-quote reveal">
+              <p>"What used to take my best inspector a full day now takes ninety minutes, and the report is cleaner and more consistent than anything we were producing manually."</p>
+              <cite>Operations Director, Pacific Infrastructure Services</cite>
+            </blockquote>
+          </div>
+
+          <aside class="case-sidebar">
+            <article class="content-panel reveal">
+              <span class="panel-label">What Mattered</span>
+              <h3>AI assisted the inspector instead of replacing them</h3>
+              <p>
+                The system performed the first-pass classification and report structure,
+                while human confirmation preserved accountability and auditability.
+              </p>
+            </article>
+            <article class="content-panel reveal">
+              <span class="panel-label">Proof Points</span>
+              <ul class="detail-list">
+                <li><strong>82</strong> frames in test set</li>
+                <li><strong>12</strong> bridge and pier inspections</li>
+                <li><strong>14</strong> defect categories</li>
+                <li><strong>0</strong> critical defects missed</li>
+              </ul>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-compact">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div>
+              <p class="eyebrow">Continue</p>
+              <h2>Return to the full project index.</h2>
+            </div>
+            <div class="button-row">
+              <a class="button button-primary" href="../../projects/index.html">Back to Projects</a>
+              <a class="button button-secondary" href="../rag-eval/index.html">Review RAG-Eval</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="../../index.html" aria-label="DigitalStoneAI Studio home">
+            <img class="brand-mark" src="../../assets/images/logo1.png" alt="" width="50" height="40">
+            <span class="brand-text"><span class="brand-name">DigitalStoneAI</span><span class="brand-subtitle">Systems Studio</span></span>
+          </a>
+          <p class="footer-note">AI systems, automation workflows, and practical technical builds.</p>
+        </div>
+        <div class="footer-links" aria-label="Footer navigation">
+          <a href="../../index.html">Home</a>
+          <a href="../../projects/index.html">Projects</a>
+          <a href="../../services/index.html">Services</a>
+          <a href="../../links/index.html">Links</a>
+          <a href="../../contact/index.html">Contact</a>
+          <a class="social-link" href="https://www.linkedin.com/in/jayms-henson" target="_blank" rel="noopener noreferrer" aria-label="Jayms Henson on LinkedIn">
+            <img class="social-icon" src="../../assets/images/linedkinlogo.jpg" alt="">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/digitalstone.ai/" target="_blank" rel="noopener noreferrer" aria-label="DigitalStoneAI on Instagram">
+            <img class="social-icon" src="../../assets/images/instalogo.avif" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

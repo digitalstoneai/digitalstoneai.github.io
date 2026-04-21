@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="RAG-Eval case study for retrieval quality benchmarking, hallucination reduction, source coverage, and remediation planning for RAG systems.">
+    <title>RAG-Eval Case Study | DigitalStoneAI Studio</title>
+    <link rel="canonical" href="https://digitalstoneai.com/case-studies/rag-eval/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="RAG-Eval Case Study | DigitalStoneAI Studio">
+    <meta property="og:description" content="Retrieval quality benchmarking, hallucination reduction, source coverage, and remediation planning for RAG systems.">
+    <meta property="og:url" content="https://digitalstoneai.com/case-studies/rag-eval/">
+    <meta property="og:site_name" content="DigitalStoneAI Studio">
+    <meta property="og:image" content="https://digitalstoneai.com/assets/images/RAGeval.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="../../assets/images/logo1.png">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script src="../../assets/js/main.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "RAG-Eval Case Study",
+        "url": "https://digitalstoneai.com/case-studies/rag-eval/",
+        "description": "Case study for retrieval quality benchmarking, hallucination reduction, source coverage, and remediation planning for RAG systems.",
+        "image": "https://digitalstoneai.com/assets/images/RAGeval.png",
+        "author": {
+          "@type": "Person",
+          "name": "Jayms Henson"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "DigitalStoneAI Studio",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://digitalstoneai.com/assets/images/logo1.png"
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-site-header>
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="../../index.html" aria-label="DigitalStoneAI Studio home">
+          <img class="brand-mark" src="../../assets/images/logo1.png" alt="" width="52" height="42">
+          <span class="brand-text"><span class="brand-name">DigitalStoneAI</span><span class="brand-subtitle">Systems Studio</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
+          <span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="sr-only">Toggle navigation</span>
+        </button>
+        <div class="nav-links" id="primary-menu" data-nav-menu>
+          <a class="nav-link" href="../../index.html">Home</a>
+          <a class="nav-link active" href="../../projects/index.html" aria-current="page">Projects</a>
+          <a class="nav-link" href="../../services/index.html">Services</a>
+          <a class="nav-link" href="../../links/index.html">Links</a>
+          <a class="nav-link" href="../../contact/index.html">Contact</a>
+          <a class="social-link" href="https://www.linkedin.com/in/jayms-henson" target="_blank" rel="noopener noreferrer" aria-label="Jayms Henson on LinkedIn">
+            <img class="social-icon" src="../../assets/images/linedkinlogo.jpg" alt="">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/digitalstone.ai/" target="_blank" rel="noopener noreferrer" aria-label="DigitalStoneAI on Instagram">
+            <img class="social-icon" src="../../assets/images/instalogo.avif" alt="">
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section">
+        <div class="container case-hero-grid">
+          <div class="section-header reveal">
+            <p class="eyebrow">Evaluation Framework</p>
+            <h1>RAG-Eval</h1>
+            <p>
+              Retrieval Quality Benchmarking System built to evaluate the accuracy,
+              faithfulness, and retrieval relevance of RAG pipelines before client deployment.
+            </p>
+            <div class="meta-row">
+              <span class="tag">Legal / Professional Services</span>
+              <span class="tag">RAGAS</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">ChromaDB</span>
+            </div>
+            <div class="button-row">
+              <a class="button button-secondary" href="../../projects/index.html">Back to Projects</a>
+              <a class="button button-ghost" href="../../contact/index.html">Contact</a>
+            </div>
+            <div class="case-hero-kpis" aria-label="RAG-Eval headline metrics">
+              <div><strong>34% to 91%</strong><span>faithfulness improvement</span></div>
+              <div><strong>4.2%</strong><span>post-fix hallucination rate</span></div>
+              <div><strong>88%</strong><span>retrieval precision across 80 queries</span></div>
+              <div><strong>3 hrs</strong><span>automated evaluation runtime</span></div>
+            </div>
+          </div>
+
+          <aside class="feature-panel case-summary reveal" aria-label="Project summary">
+            <h2>Project Summary</h2>
+            <dl class="case-meta">
+              <div><dt>Client</dt><dd>Coastal Legal Group, San Diego, CA. Mid-size personal injury law firm with 12 attorneys and 8 staff.</dd></div>
+              <div><dt>Challenge</dt><dd>A prior vendor delivered a chatbot with a 34% hallucination rate on factual case data.</dd></div>
+              <div><dt>System Type</dt><dd>Automated RAG benchmark, failure analysis, and remediation workflow.</dd></div>
+              <div><dt>Business Risk</dt><dd>Incorrect case facts could damage trust before the system ever reached clients.</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-panel">
+        <div class="container case-shell">
+          <div class="case-main">
+            <article class="content-panel reveal">
+              <span class="panel-label">Challenge</span>
+              <h2>Preventing hallucination-prone answers from going live</h2>
+              <p>
+                The firm needed a RAG system that could answer intake questions from case documents.
+                The inherited chatbot was returning invented or mismatched facts on high-stakes details
+                like settlement demand amounts, hospital visits, and statute deadlines.
+              </p>
+              <ul class="insight-list">
+                <li><strong>Primary problem:</strong> generated answers were not reliably grounded in retrieved documents.</li>
+                <li><strong>Evaluation target:</strong> faithfulness, answer relevance, context precision, and failure cases.</li>
+                <li><strong>Success condition:</strong> ship only after the retrieval pipeline could be measured and repaired.</li>
+              </ul>
+            </article>
+
+            <article class="content-panel reveal">
+              <span class="panel-label">System &amp; Stack</span>
+              <h2>Benchmark workflow with automated delivery</h2>
+              <div class="flow-list">
+                <span>Document ingestion</span>
+                <span>Chunking strategy test</span>
+                <span>Embedding model eval</span>
+                <span>Retrieval scoring</span>
+                <span>Faithfulness check</span>
+                <span>Report output</span>
+              </div>
+              <div class="stack-tags" aria-label="RAG-Eval stack">
+                <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>OpenAI text-embedding-3-small</span><span>RAGAS</span><span>n8n</span><span>Google Drive ingestion</span>
+              </div>
+            </article>
+
+            <figure class="visual-panel reveal">
+              <img class="case-visual" src="../../assets/images/RAGeval.png" alt="RAG-Eval visual showing the retrieval benchmarking workflow and evaluation metrics">
+              <figcaption class="visual-caption">RAG-Eval visual summary showing the evaluation workflow before the detailed benchmark data.</figcaption>
+            </figure>
+
+            <article class="data-panel reveal">
+              <div class="table-heading">
+                <div>
+                  <span class="panel-label">Benchmark Review Set</span>
+                  <h2>8-query excerpt from an 80-query benchmark</h2>
+                </div>
+                <p>Failures were used to identify retrieval and extraction weaknesses.</p>
+              </div>
+              <div class="table-wrap">
+                <table class="case-table">
+                  <thead>
+                    <tr><th>Test ID</th><th>Query</th><th>Expected answer</th><th>Retrieved</th><th>Faithful</th><th>Score</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>T-001</td><td>What was the incident date?</td><td>March 14, 2023</td><td>March 14, 2023</td><td class="score-good">Yes</td><td>0.97</td></tr>
+                    <tr><td>T-002</td><td>Name of treating physician?</td><td>Dr. Amara Singh</td><td>Dr. A. Singh</td><td class="score-warn">Partial</td><td>0.81</td></tr>
+                    <tr><td>T-003</td><td>Settlement demand amount?</td><td>$185,000</td><td>$150,000</td><td class="score-bad">No</td><td>0.12</td></tr>
+                    <tr><td>T-004</td><td>Liability determination?</td><td>Defendant at fault</td><td>Defendant at fault</td><td class="score-good">Yes</td><td>0.94</td></tr>
+                    <tr><td>T-005</td><td>Insurance policy limit?</td><td>$250,000</td><td>$250,000</td><td class="score-good">Yes</td><td>0.99</td></tr>
+                    <tr><td>T-006</td><td>Medical expenses total?</td><td>$42,380</td><td>$42,380</td><td class="score-good">Yes</td><td>0.96</td></tr>
+                    <tr><td>T-007</td><td>Number of hospital visits?</td><td>7</td><td>5</td><td class="score-bad">No</td><td>0.31</td></tr>
+                    <tr><td>T-008</td><td>Statute of limitations date?</td><td>March 14, 2025</td><td>Not retrieved</td><td class="score-bad">No</td><td>0.04</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="content-panel reveal">
+              <span class="panel-label">Remediation</span>
+              <h2>The fix was not just a better prompt</h2>
+              <ul class="detail-list">
+                <li><strong>Chunking fix:</strong> switched from 512-token flat chunks to 1024-token chunks with 20% overlap and metadata tagging.</li>
+                <li><strong>Evaluation fix:</strong> used RAGAS metrics for faithfulness, answer relevance, and context precision.</li>
+                <li><strong>Pipeline fix:</strong> statute and date fields required a dedicated extraction agent instead of standard semantic retrieval.</li>
+                <li><strong>Delivery fix:</strong> evaluation reports were automated through n8n so the client could review failures without digging through logs.</li>
+              </ul>
+            </article>
+
+            <article class="content-panel reveal">
+              <span class="panel-label">Results</span>
+              <h2>Measured quality before client exposure</h2>
+              <div class="metric-grid">
+                <div class="metric-card"><span>Baseline faithfulness</span><strong>34%</strong><p>Before RAG-Eval</p></div>
+                <div class="metric-card"><span>Post-fix faithfulness</span><strong>91%</strong><p>After remediation</p></div>
+                <div class="metric-card"><span>Retrieval precision</span><strong>88%</strong><p>Average across 80 queries</p></div>
+                <div class="metric-card"><span>Hallucination rate</span><strong>4.2%</strong><p>Down from 34%</p></div>
+              </div>
+            </article>
+
+            <blockquote class="case-quote reveal">
+              <p>"We were about to go live with a system that was making up case details. DigitalStone caught it before it cost us a client relationship."</p>
+              <cite>Managing Partner, Coastal Legal Group</cite>
+            </blockquote>
+          </div>
+
+          <aside class="case-sidebar">
+            <article class="content-panel reveal">
+              <span class="panel-label">What Mattered</span>
+              <h3>Risk surfaced before launch</h3>
+              <p>
+                The benchmark made failure visible early enough to repair the pipeline,
+                avoiding a live client-facing AI system that could invent case details.
+              </p>
+            </article>
+            <article class="content-panel reveal">
+              <span class="panel-label">Proof Points</span>
+              <ul class="detail-list">
+                <li><strong>80</strong> total benchmark queries</li>
+                <li><strong>8</strong> representative test cases shown</li>
+                <li><strong>3 hours</strong> automated evaluation time</li>
+                <li><strong>57-point</strong> faithfulness lift</li>
+              </ul>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-compact">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div>
+              <p class="eyebrow">Continue</p>
+              <h2>Review the other applied AI systems case studies.</h2>
+            </div>
+            <div class="button-row">
+              <a class="button button-primary" href="../../projects/index.html">Back to Projects</a>
+              <a class="button button-secondary" href="../intake-ai/index.html">Next: IntakeAI</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="../../index.html" aria-label="DigitalStoneAI Studio home">
+            <img class="brand-mark" src="../../assets/images/logo1.png" alt="" width="50" height="40">
+            <span class="brand-text"><span class="brand-name">DigitalStoneAI</span><span class="brand-subtitle">Systems Studio</span></span>
+          </a>
+          <p class="footer-note">AI systems, automation workflows, and practical technical builds.</p>
+        </div>
+        <div class="footer-links" aria-label="Footer navigation">
+          <a href="../../index.html">Home</a>
+          <a href="../../projects/index.html">Projects</a>
+          <a href="../../services/index.html">Services</a>
+          <a href="../../links/index.html">Links</a>
+          <a href="../../contact/index.html">Contact</a>
+          <a class="social-link" href="https://www.linkedin.com/in/jayms-henson" target="_blank" rel="noopener noreferrer" aria-label="Jayms Henson on LinkedIn">
+            <img class="social-icon" src="../../assets/images/linedkinlogo.jpg" alt="">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/digitalstone.ai/" target="_blank" rel="noopener noreferrer" aria-label="DigitalStoneAI on Instagram">
+            <img class="social-icon" src="../../assets/images/instalogo.avif" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
