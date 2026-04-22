@@ -338,6 +338,10 @@ button {
   align-items: start;
 }
 
+.split > .case-snapshot-band {
+  grid-column: 1 / -1;
+}
+
 .cluster {
   display: flex;
   flex-wrap: wrap;
@@ -803,6 +807,62 @@ p {
   color: var(--color-text-muted);
   font-size: 0.88rem;
   font-weight: 760;
+}
+
+.case-snapshot-band {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: clamp(0.5rem, 2vw, 1rem);
+}
+
+.case-snapshot-band a {
+  display: grid;
+  min-height: 148px;
+  align-content: center;
+  border: 1px solid rgba(216, 238, 255, 0.12);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.014)),
+    rgba(4, 14, 26, 0.58);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+  padding: var(--space-5);
+  text-decoration: none;
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-base),
+    background-color var(--transition-base);
+}
+
+.case-snapshot-band a:hover {
+  transform: translateY(-3px);
+  border-color: rgba(36, 215, 232, 0.48);
+  background-color: rgba(36, 215, 232, 0.045);
+  box-shadow: var(--shadow-card);
+}
+
+.case-snapshot-band span {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-snapshot-band strong {
+  margin-block: 0.4rem 0.25rem;
+  color: var(--color-text);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.case-snapshot-band em {
+  color: var(--color-text-soft);
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 760;
+  line-height: 1.35;
 }
 
 .outcome-strip-tight .outcome-link {
@@ -2133,6 +2193,7 @@ a.contact-icon:hover {
   .card-grid.two,
   .card-grid.four,
   .outcome-strip,
+  .case-snapshot-band,
   .case-card-grid,
   .capability-grid,
   .expertise-grid,
@@ -2250,6 +2311,7 @@ a.contact-icon:hover {
   .card-grid.two,
   .card-grid.four,
   .outcome-strip,
+  .case-snapshot-band,
   .case-card-grid,
   .capability-grid,
   .expertise-grid,

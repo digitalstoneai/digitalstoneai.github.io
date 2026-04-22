@@ -11,7 +11,7 @@ No build step is required for the current static version.
 ## Structure
 
 - `index.html` - homepage foundation
-- `projects/` - projects index
+- `projects/` - Case Studies index page
 - `case-studies/` - active data-rich case study routes
 - `links/` - contact and profile links page
 - `resume/` - static resume page with PDF view/download links
@@ -48,12 +48,13 @@ Deployment-ready support files:
 
 - `.nojekyll` keeps GitHub Pages from processing the site with Jekyll.
 - `404.html` provides a simple fallback page.
+- `sitemap.xml` and `robots.txt` support crawler discovery for the static site.
 - `.gitignore` excludes OS/editor noise and future local build folders.
 
 ## Content Update Checklist
 
 - Replace `assets/images/logo1.png` if a revised logo is supplied.
-- Update the GitHub link in `links/index.html` when a public profile or repository hub is ready.
+- Update the GitHub repository hub link in `links/index.html` if the public profile URL changes.
 - Replace `AIResume.pdf` when a revised formal resume is supplied.
 - Replace the Formspree endpoint in `contact/index.html` if the production form ID changes.
 - Refine case study copy, tables, metrics, or visuals in each active `case-studies/*/index.html` route as new proof becomes available.
